@@ -10,7 +10,7 @@ public class L7Q6 {
 
         try {
             // Read Products
-            Scanner sProd = new Scanner(new FileInputStream("product.txt"));
+            Scanner sProd = new Scanner(new FileInputStream("lab/product.txt"));
             while (sProd.hasNextLine()) {
                 String[] data = sProd.nextLine().split(",");
                 productName.put(data[0], data[1]);
@@ -19,7 +19,7 @@ public class L7Q6 {
             sProd.close();
 
             // Read Orders and Merge
-            Scanner sOrder = new Scanner(new FileInputStream("order.txt"));
+            Scanner sOrder = new Scanner(new FileInputStream("lab/order.txt"));
             System.out.printf("%-10s %-20s %-10s %-15s %-10s\n", "ProductID", "ProductName", "Quantity", "PricePerUnit", "Total");
             
             while (sOrder.hasNextLine()) {

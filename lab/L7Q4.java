@@ -7,7 +7,7 @@ public class L7Q4 {
     public static void main(String[] args) {
         int chars = 0, words = 0, lines = 0;
         
-        try (Scanner sc = new Scanner(new FileInputStream("input.txt"))) {
+        try (Scanner sc = new Scanner(new FileInputStream("lab/lecturer.txt"))) {
             while (sc.hasNextLine()) {
                 String line = sc.nextLine();
                 lines++;

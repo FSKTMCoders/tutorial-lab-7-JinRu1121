@@ -15,7 +15,7 @@ public class L7Q5 {
     public static void main(String[] args) {
         List<Person> list = new ArrayList<>();
         
-        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("person.dat"))) {
+        try (ObjectInputStream in = new ObjectInputStream(new FileInputStream("lab/person.dat"))) {
             int total = in.readInt();
             for (int i = 0; i < total; i++) {
                 list.add(new Person(in.readUTF(), in.readInt(), in.readChar()));

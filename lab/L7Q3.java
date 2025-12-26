@@ -6,7 +6,7 @@ import java.util.Scanner;
 public class L7Q3 {
     public static void main(String[] args) {
         try {
-            Scanner read = new Scanner(new FileInputStream("input.txt"));
+            Scanner read = new Scanner(new FileInputStream("lab/lecturer.txt"));
             PrintWriter write = new PrintWriter(new FileOutputStream("reverse.txt"));
 
             while (read.hasNextLine()) {
